@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zame's Dumpling House</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/main.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/responsive.css">
+    <!--Animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!--fonts-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Rancho|Roboto:300,400,500,700" rel="stylesheet">
+</head>
+<body>
+<!--CSS Spinner-->
+<!-- <div class="spinner-wrapper">
+<div class="spinner"></div> -->
+</div>
+    <!--JUMBO TRON-->
+    <div class="hero-wrapper" id="top">
+        <div class="bg-left">
+            <div class="title-box">
+                <h1 class="title">
+                    ZAME'S
+                </h1>
+                <h1 class="slogan">
+                    House of Dumplings
+                </h1>
+                <p class="subtxt">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, debitis explicabo autem dolor necessitatibus totam consequuntur vel cupiditate pariatur nulla harum error non facilis neque. Officia iure quaerat tempore fugiat!
+                </p>
+                <button class="hero-btn">
+                    <a href="#menu-btn">Menu</a>
+                </button>
+            </div>    
+        </div>
+        <div class="bg-right">
+            <nav class="nav-wrap">
+                <div class="nav-container">
+                    <ul class="main-nav">
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#menu-btn">Menu</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="http://zamekhan.net/"">Portfolio</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <section class="heading" id="about">
+        <div class="sect-heading-box">
+            <h1>Delious Journey</h1>
+            <h2>lorem ipsum delta foxtrot lima oscar</h2>
+        </div>
+    </section>
+    <section class="gallary">
+        <div class="gallary-container">
+            <div class="row1">
+                <div class="box-container1 sml-bx animated slideInUp delay-1s">
+                    <div class="text-wrap">
+                        <h1>Welcome</h1>
+                        <h2>To Restaurant!</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolore, harum magni minus libero, perspiciatis
+                            minima debitis velit necessitatibus soluta amet cumque at! Reiciendis eos doloremque, suscipit neque at
+                            libero.</p>
+                    </div>
+                </div>
+                <div class="box-container2 lg-bx animated slideInUp delay-2s">
+                    
+                </div>
+            </div>
+            <div class="row2">
+                <div class="box-container3 sml-bx animated slideInUp delay-3s">
+                </div>
+                <div class="box-container4 lg-bx animated slideInUp delay-4s">
+                    <div class="text-wrap">
+                        <h1>About</h1>
+                        <h2>Our Restaurant!</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugiat id iusto enim tempore aliquid neque.
+                            Mollitia repudiandae consectetur facilis, eius odit possimus voluptate laudantium animi minima cupiditate
+                            enim ducimus!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="parallax px">
+        <p>Amazing Authentic Creations</p>
+    </div>
+    <section class="heading" id="menu-btn">
+        <div class="sect-heading-box">
+            <h1>Our Menu</h1>
+            <h2>lorem ipsum delta foxtrot lima oscar</h2>
+        </div>
+    </section>
+    <!--MENU SECTION-->
+    <section class="menu-area">
+        <div class="menu-container" id="menu">
+            <div class="filter">
+                <label><input type="radio" v-model="selectedCategory" value="Dumplings" /> Dumplings</label>
+                <label><input type="radio" v-model="selectedCategory" value="Sushi" /> Sushi</label>
+                <label><input type="radio" v-model="selectedCategory" value="Noodles" /> Noodles</label>
+                <label><input type="radio" v-model="selectedCategory" value="Drinks" /> Drinks</label>
+            </div>
+            <div class="menu-wrapper">
+                <div class="menu-items-box">
+                    <ul class="menu-list">
+                        <li v-for="food in filteredMenu">{{ food.name }} <span></span> {{food.price}} </li>
+                    </ul>
+                </div>
+                <div class="menu-image"></div>
+            </div>
+        </div>
+    </section>
+    <div class="parallax2 px">
+        <p>Signature Recipes Reinvented</p>
+    </div>
+    <section class="bottom" id="contact">
+        <section class="heading">
+        <div class="sect-heading-box">
+            <h1>Say Hello</h1>
+            <h2>lorem ipsum delta foxtrot lima oscar</h2>
+        </div>
+        </section>
+        <div class="info-wrapper">
+            <div class="info-box if-bx1">
+                <div class="icon-box">
+                    <i class="far fa-clock"></i>
+                </div>
+                <h1>Phone</h1>
+                <p>02100112233</p>
+            </div>
+            <div class="info-box if-bx2">
+                    <div class="icon-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h1>Address</h1>
+                    <p>360 Lorem Ave</p>
+                    <p>Ipsum</p>
+                    <p>Auckland 1010</p>
+                </div>
+            <div class="info-box if-bx3">
+                <div class="icon-box">
+                    <i class="far fa-envelope"></i>
+                </div>
+                <h1>email</h1>
+                <p>Loremipsum@gmail.com</p>
+            </div>
+        </div>
+    </section>
+    <iframe width="100%" height="280" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyCWuHdmPtwso8Yn1rbXF0QhrkzSmzZemfE&zoom=17&center=-36.8484,174.7621" allowfullscreen></iframe>
+    <!--FOOTER-->
+    <footer>
+        <div class="container_footer">
+            <div class="left">
+                <p>©2018 <span>Designed and Developed by<a href="https://www.zamekhan.net"> Zame</a></span></p>
+            </div>
+            <div class="right">
+                <a href="#top">Return to Top <i class="fa fa-long-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+<script src="/assets/main.js"></script>
+
+
+</html>
+
+<!-- 
+    AIzaSyCWuHdmPtwso8Yn1rbXF0QhrkzSmzZemfE 

@@ -1,0 +1,477 @@
+*{
+    padding:0;
+    margin:0;
+} 
+
+// ===== MIXINS AND VARIABLES ===== //
+$font1:'Rancho', cursive;
+$font2:'Roboto', sans-serif;
+$font3:'Montserrat', sans-serif;
+$color-theme1: #a67d4a;
+
+
+@mixin bg-size{
+    height:100vh;
+    width:100%;
+    background-size: cover;
+    background-position:center;
+}
+
+// @mixin box-size{
+//     height:280px;
+//     width:100%;
+// }
+
+@mixin parallax{
+    height: 20em;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+// @JUMBO TRON 
+.hero-wrapper{
+    height: 100vh;
+    width:100%;
+}
+
+.bg-left{
+    @include bg-size;
+    clip-path: polygon(0 0, 40% 0, 70% 100%, 0% 100%);
+    background-image:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 1)), url('/assets/Imgs/board2.jpg');
+    position: absolute;
+    z-index: 20;
+}
+
+.title-box{
+    position: relative;
+    top:25%;
+    margin-left: 10%;
+    text-align: center;
+    width:25%;
+    h1.title{
+        font-family: $font1;
+        font-size: 4em;
+        color:$color-theme1;
+    }
+    h1.slogan{
+        font-family: $font2;
+        font-size:2em;
+        text-transform: uppercase;
+        font-weight: 100;
+        color: #263248;
+    }
+    p.subtxt{
+        color: lightgray;
+        font-family: $font3;
+        font-size: 0.8em;
+        margin: 1em 0 0 0;
+    }
+    button.hero-btn{
+        margin-top:40px;
+        padding: 10px 40px;
+        background-color: $color-theme1;
+        border-radius: 2px;
+        transition: 300ms;
+        clip-path: polygon(95% 1%, 100% 50%, 95% 100%, 5% 100%, 0 51%, 5% 0);
+        a{
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1rem;
+            font-family: $font2;
+            text-transform: uppercase;
+            transition: 300ms;
+        }
+    }
+}
+
+.bg-right{
+    @include bg-size;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('/assets/Imgs/dumpling-plate.jpg');
+    background-position-y: 50%;
+} 
+
+//- Nav 
+.nav-wrap{
+    position: absolute;
+    top:0;
+    right:10%;
+    z-index:99;
+}
+
+.main-nav{
+    text-align:center;
+    list-style:none;
+    margin:1em 0 0 0;
+    li {
+        display:inline;
+        margin:1.5em;
+    }
+    li a{
+        color:#ffff;
+        text-decoration: none;
+        font-family: helvetica;
+        text-transform: uppercase;
+        transition:all 0.3s ease-in-out;
+        -moz-transition:all 0.3s ease-in-out;
+        -webkit-transition:all 0.3s ease-in-out;
+    }
+    li a:hover{
+        color: $color-theme1;
+    }
+}
+// @HEADING SECTIONS
+section{
+    width:100%;
+}
+.heading{
+    padding-top:50px;
+    height:100px; 
+    .sect-heading-box{
+        text-align: center;
+    }
+    h1{
+        font-family: $font1;
+        color: $color-theme1;
+        font-size:2em;
+    }
+    h2{
+        font-family: $font3;
+        font-weight: 100;
+        font-size:12px;
+        color:lightgray;
+        margin-top: 5px;
+    }
+}
+.gallary{
+    height:100%;
+}
+
+.gallary-container{
+    display: flex;
+    flex-direction: column;
+    width:70vw;
+    margin:auto;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.row1, .row2{
+    display:flex;
+}
+
+.sml-bx{
+    height:280px;
+    min-width: 300px;
+    width: 100%;
+}
+
+.lg-bx{
+    height:280px;
+    min-width: 600px;
+    width: 100%;
+}
+
+.box-container1, .box-container4{
+    h1{
+        text-align: center;
+        font-family: $font1;
+        color: $color-theme1;
+        margin:0.2em;
+        font-size: 3em;
+    }
+    h2{
+        text-align: center;
+        font-family: $font3;
+        color:#fff;
+        text-transform: uppercase;
+    }
+    p{
+        margin: 1em;
+        color:#999;
+        font-family: $font2;
+        text-align: center;
+        font-size:0.8em;
+    }
+    background-color: #262626;
+    .text-wrap{
+        width:80%;
+        margin:auto;
+    }
+}
+
+.box-container2{
+    background-image: url('/assets/Imgs/restaurant.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.box-container3{
+    background-image: url('/assets/Imgs/sushi4.jpg');
+    background-position:center;
+    background-size:cover;
+}
+// @PARALLAX
+
+.parallax{
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('/assets/Imgs/steaming-dumplings.jpg');
+    margin-top:90px;
+    @include parallax;
+}
+
+.px p{
+	color:#fff;
+	text-align: center;
+	margin:0;
+	font-family: 'Raleway', sans-serif;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+.parallax2{
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('/assets/Imgs/sushi-plate.jpg');
+    @include parallax;
+}
+
+// @MENU AREA 
+.menu-area{
+    height:100vh;
+}
+
+.menu-title{
+    width:100%;
+    text-align: center;
+    h1{
+        font-family: $font1;
+        color: $color-theme1;
+        font-size:3em; 
+        text-transform: uppercase;
+    }
+    h2{
+        font-family: $font3;
+        color: lightgray;
+        font-size:10px;
+        font-weight: 100;
+    }
+}
+
+.filter{
+    display:flex;
+    margin: 1em auto 1em auto;
+    width:55%;
+    label {
+        display: block;
+        // height: 1.5em;
+        height:50px;
+        width: 150px;
+        line-height: 50px;
+        border: $color-theme1 2px solid;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $font3;
+        color: $color-theme1;
+        font-weight: 600;
+        padding: 0 15px 0 0;
+        transition: 300ms;
+    }
+    label:hover{
+        background-color: $color-theme1;
+        transition: 300ms;
+        color:#fff
+    }
+    
+    input{
+        visibility: hidden;
+    }
+}
+
+.menu-wrapper{
+    width:80%;
+    margin:auto;
+    display:flex;  
+    // border: blue solid 1px;    
+}
+
+.menu-items-box{
+    height:500px;
+    width:100%;
+    margin-left: 3em;
+    flex:1;
+    // border: red solid 1px;
+    ul{
+        text-decoration: none;
+        list-style-type: none;
+        margin-top: 4em;
+        li{
+            font-size: 1em;
+            margin: 10px;
+            text-transform: uppercase;
+            font-family: $font3;
+            color: $color-theme1;
+            padding: 8px 16px;
+            border-bottom: 1px solid #eee;
+            width:80%;
+            span{
+                padding: 0 120px 0 0 ;
+            }
+        }
+    }
+}
+
+.menu-image{
+    height: auto; 
+    width: auto; 
+    max-width: 400px; 
+    max-height: 400px;
+    overflow: hidden;
+    flex:2;
+    background-image:url('/assets/Imgs/sushi2.png');
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.bottom{
+    height: 35rem;
+    background-color: #f5f5f5;
+}
+
+.info-wrapper{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    padding: 2em 0 5em 0;
+}
+
+.info-box{
+    height: 250px;
+    width:300px;
+    font-family: $font3;
+    color:$color-theme1;
+    h1{
+        text-align:center;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1em;
+        margin-bottom: 1.5em;
+    }
+    p{
+        text-align:center;
+        font-weight: 100;
+        font-size: 0.8em;
+        margin-bottom: 0.5em;
+    }
+}
+
+.if-bx1, .if-bx2{
+    border-right: solid 1px  #a67d4a;
+}
+
+.icon-box{
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.far, .fas{
+    color:  #a67d4a;
+    font-size: 2em;
+}
+
+footer{
+    height: 120px;
+    background-color: #f5f5f5;
+}
+
+.container_footer {
+	width: 100%;
+	max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    line-height: 120px;
+    color: #999;
+}
+
+.left, .right {	
+    width: 50%;
+}
+
+.left {
+	text-align: left;
+}
+
+.left span {
+	font-family: $font3;
+    text-transform: uppercase;
+    a{
+        text-decoration: none;
+    }
+}
+
+.right {
+	text-align: right;
+    text-transform: uppercase;
+}
+
+.right a { 
+    color: #999;
+    text-decoration: none;
+    font-family: $font3;
+    line-height: 120px;
+}
+
+.right a:hover { 
+    color: $color-theme1;
+}
+
+
+// Pre loader
+// .spinner-wrapper {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background-color: #ff6347;
+//     z-index: 999999;
+//     }
+// .spinner {
+//     width: 40px;
+//     height: 40px;
+//     background-color: #ffffff;
+  
+//     margin: 100px auto;
+//     -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+//     animation: sk-rotateplane 1.2s infinite ease-in-out;
+//   }
+  
+//   @-webkit-keyframes sk-rotateplane {
+//     0% { -webkit-transform: perspective(120px) }
+//     50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+//     100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+//   }
+  
+//   @keyframes sk-rotateplane {
+//     0% { 
+//       transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+//       -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+//     } 50% { 
+//       transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+//       -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+//     } 100% { 
+//       transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+//       -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+//     }
+//   }

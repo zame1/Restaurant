@@ -1,0 +1,493 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.hero-wrapper {
+  height: 100vh;
+  width: 100%;
+}
+
+.bg-left {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-clip-path: polygon(0 0, 40% 0, 70% 100%, 0% 100%);
+          clip-path: polygon(0 0, 40% 0, 70% 100%, 0% 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(white)), url("/assets/Imgs/board2.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), white), url("/assets/Imgs/board2.jpg");
+  position: absolute;
+  z-index: 20;
+}
+
+.title-box {
+  position: relative;
+  top: 25%;
+  margin-left: 10%;
+  text-align: center;
+  width: 25%;
+}
+
+.title-box h1.title {
+  font-family: "Rancho", cursive;
+  font-size: 4em;
+  color: #a67d4a;
+}
+
+.title-box h1.slogan {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #263248;
+}
+
+.title-box p.subtxt {
+  color: lightgray;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  margin: 1em 0 0 0;
+}
+
+.title-box button.hero-btn {
+  margin-top: 40px;
+  padding: 10px 40px;
+  background-color: #a67d4a;
+  border-radius: 2px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  -webkit-clip-path: polygon(95% 1%, 100% 50%, 95% 100%, 5% 100%, 0 51%, 5% 0);
+          clip-path: polygon(95% 1%, 100% 50%, 95% 100%, 5% 100%, 0 51%, 5% 0);
+}
+
+.title-box button.hero-btn a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.bg-right {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.1))), url("/assets/Imgs/dumpling-plate.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("/assets/Imgs/dumpling-plate.jpg");
+  background-position-y: 50%;
+}
+
+.nav-wrap {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  z-index: 99;
+}
+
+.main-nav {
+  text-align: center;
+  list-style: none;
+  margin: 1em 0 0 0;
+}
+
+.main-nav li {
+  display: inline;
+  margin: 1.5em;
+}
+
+.main-nav li a {
+  color: #ffff;
+  text-decoration: none;
+  font-family: helvetica;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.main-nav li a:hover {
+  color: #a67d4a;
+}
+
+section {
+  width: 100%;
+}
+
+.heading {
+  padding-top: 50px;
+  height: 100px;
+}
+
+.heading .sect-heading-box {
+  text-align: center;
+}
+
+.heading h1 {
+  font-family: "Rancho", cursive;
+  color: #a67d4a;
+  font-size: 2em;
+}
+
+.heading h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  color: lightgray;
+  margin-top: 5px;
+}
+
+.gallary {
+  height: 100%;
+}
+
+.gallary-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70vw;
+  margin: auto;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.row1, .row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sml-bx {
+  height: 280px;
+  min-width: 300px;
+  width: 100%;
+}
+
+.lg-bx {
+  height: 280px;
+  min-width: 600px;
+  width: 100%;
+}
+
+.box-container1, .box-container4 {
+  background-color: #262626;
+}
+
+.box-container1 h1, .box-container4 h1 {
+  text-align: center;
+  font-family: "Rancho", cursive;
+  color: #a67d4a;
+  margin: 0.2em;
+  font-size: 3em;
+}
+
+.box-container1 h2, .box-container4 h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.box-container1 p, .box-container4 p {
+  margin: 1em;
+  color: #999;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.box-container1 .text-wrap, .box-container4 .text-wrap {
+  width: 80%;
+  margin: auto;
+}
+
+.box-container2 {
+  background-image: url("/assets/Imgs/restaurant.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.box-container3 {
+  background-image: url("/assets/Imgs/sushi4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.parallax {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("/assets/Imgs/steaming-dumplings.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/Imgs/steaming-dumplings.jpg");
+  margin-top: 90px;
+  height: 20em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.px p {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.parallax2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("/assets/Imgs/sushi-plate.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/Imgs/sushi-plate.jpg");
+  height: 20em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu-area {
+  height: 100vh;
+}
+
+.menu-title {
+  width: 100%;
+  text-align: center;
+}
+
+.menu-title h1 {
+  font-family: "Rancho", cursive;
+  color: #a67d4a;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.menu-title h2 {
+  font-family: "Montserrat", sans-serif;
+  color: lightgray;
+  font-size: 10px;
+  font-weight: 100;
+}
+
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em auto 1em auto;
+  width: 55%;
+}
+
+.filter label {
+  display: block;
+  height: 50px;
+  width: 150px;
+  line-height: 50px;
+  border: #a67d4a 2px solid;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #a67d4a;
+  font-weight: 600;
+  padding: 0 15px 0 0;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.filter label:hover {
+  background-color: #a67d4a;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  color: #fff;
+}
+
+.filter input {
+  visibility: hidden;
+}
+
+.menu-wrapper {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-items-box {
+  height: 500px;
+  width: 100%;
+  margin-left: 3em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.menu-items-box ul {
+  text-decoration: none;
+  list-style-type: none;
+  margin-top: 4em;
+}
+
+.menu-items-box ul li {
+  font-size: 1em;
+  margin: 10px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #a67d4a;
+  padding: 8px 16px;
+  border-bottom: 1px solid #eee;
+  width: 80%;
+}
+
+.menu-items-box ul li span {
+  padding: 0 120px 0 0;
+}
+
+.menu-image {
+  height: auto;
+  width: auto;
+  max-width: 400px;
+  max-height: 400px;
+  overflow: hidden;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background-image: url("/assets/Imgs/sushi2.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bottom {
+  height: 35rem;
+  background-color: #f5f5f5;
+}
+
+.info-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding: 2em 0 5em 0;
+}
+
+.info-box {
+  height: 250px;
+  width: 300px;
+  font-family: "Montserrat", sans-serif;
+  color: #a67d4a;
+}
+
+.info-box h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: 1.5em;
+}
+
+.info-box p {
+  text-align: center;
+  font-weight: 100;
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+}
+
+.if-bx1, .if-bx2 {
+  border-right: solid 1px  #a67d4a;
+}
+
+.icon-box {
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  text-align: center;
+  margin-top: 3em;
+}
+
+.far, .fas {
+  color: #a67d4a;
+  font-size: 2em;
+}
+
+footer {
+  height: 120px;
+  background-color: #f5f5f5;
+}
+
+.container_footer {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer p {
+  line-height: 120px;
+  color: #999;
+}
+
+.left, .right {
+  width: 50%;
+}
+
+.left {
+  text-align: left;
+}
+
+.left span {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.left span a {
+  text-decoration: none;
+}
+
+.right {
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.right a {
+  color: #999;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  line-height: 120px;
+}
+
+.right a:hover {
+  color: #a67d4a;
+}
+/*# sourceMappingURL=main.css.map */

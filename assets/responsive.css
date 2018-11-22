@@ -1,0 +1,253 @@
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+@media only screen and (min-width: 992px) {
+    /****Ipad Landscape 1024 Container 970 ****/
+
+}	
+   
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /****Ipad Portrait 768 Container 750 ****/
+    .bg-left{
+        clip-path: none;
+    }
+    .title-box{
+        width:80%;
+        margin:auto;
+    }
+    .bg-right{
+        background-image:none;
+    }
+    .nav-wrap{
+        right:25%;
+    }
+    .main-nav li{
+        margin:1em;
+    }
+    .main-nav li a{
+        font-size: 1em;
+        color:black;
+        margin:0;
+    }
+    .box-container2, .box-container3{
+        display:none;
+    }
+    .box-container1, .box-container4 p {
+        font-size:0.8em
+    }
+    .sml-bx, .lg-bx{
+        height:320px;
+        min-width:300px;
+    }
+    .menu-container{
+        width:80%;
+        margin:auto;
+    }
+    .filter{
+        margin:auto;
+        width:65%;
+    }
+    .filter label{
+        font-size: 10px;
+    }
+    .menu-wrapper{
+        margin:auto;
+        width:90%;
+    }
+    .menu-items-box{
+        margin:auto;
+    }
+    .menu-items-box ul li{
+        font-size:0.7em;
+        width:100%;
+    }
+    .menu-items-box ul li span{
+        padding: 0 420px 0 0 ;
+    }
+    .menu-image{
+        display: none;
+    }
+    .far, .fas{
+        font-size: 1.5em;
+    }
+    .info-box h1{
+        font-size:0.8em;
+    }
+    .info-box p{
+        font-size:0.5em;
+    }
+
+    footer p, footer a{
+        font-size: 0.5em;
+    }
+    .left, .right{
+        margin: 0 1em 0 1em;
+    }
+	
+}
+
+@media only screen and (max-width: 767px) {
+    /****Mobile Landscape 480 Container 100% ****/
+    .bg-left{
+        clip-path: none;
+    }
+    .title-box{
+        width:80%;
+        margin:auto;
+    }
+    .bg-right{
+        background-image:none;
+    }
+    .nav-wrap{
+        right:25%;
+    }
+    .main-nav li{
+        margin:1em;
+    }
+    .main-nav li a{
+        font-size: 0.7em;
+        color:black;
+        margin:0;
+    }
+    .box-container2, .box-container3{
+        display:none;
+    }
+    .sml-bx, .lg-bx{
+        height:320px;
+        min-width:300px;
+    }
+    .menu-container{
+        width:80%;
+        margin:auto;
+    }
+    .filter{
+        margin:auto;
+        width:85%;
+    }
+    .filter label{
+        font-size: 8px;
+        width:150px;
+        line-height: 50px;
+        height:50px;
+    }
+    .menu-wrapper{
+        margin:auto;
+        width:90%;
+    }
+    .menu-items-box{
+        margin:auto;
+    }
+    .menu-items-box ul li{
+        font-size:0.7em;
+        width:100%;
+    }
+    .menu-items-box ul li span{
+        padding: 0 160px 0 0 ;
+    }
+    .menu-image{
+        display: none;
+    }
+    .far, .fas{
+        font-size: 1.5em;
+    }
+    .info-box h1{
+        font-size:0.8em;
+    }
+    .info-box p{
+        font-size:0.5em;
+    }
+
+    footer p, footer a{
+        font-size: 0.5em;
+    }
+    .left, .right{
+        margin: 0 1em 0 1em;
+    }
+
+}
+
+@media only screen and (max-width: 479px) {
+    /****Mobile Portrait 320 ****/
+    .bg-left{
+        clip-path: none;
+    }
+    .title-box{
+        width:80%;
+        margin:auto;
+    }
+    .bg-right{
+        background-image:none;
+    }
+    .nav-wrap{
+        margin:auto;
+        right:12%
+
+    }
+    .main-nav li{
+        margin:1em;
+    }
+    .main-nav li a{
+        font-size: 0.5em;
+        color:black;
+        margin:0;
+    }
+    .box-container2, .box-container3{
+        display:none;
+    }
+    .box-container1, .box-container4 p {
+        font-size:0.8em
+    }
+    .sml-bx, .lg-bx{
+        height:320px;
+        min-width:300px;
+    }
+    .menu-container{
+        width:80%;
+        margin:auto;
+    }
+    .filter{
+        margin:auto;
+        width:100%;
+    }
+    .filter label{
+        font-size: 7px;
+        font-weight: 500;
+
+    }
+    .menu-wrapper{
+        margin:auto;
+        width:90%;
+    }
+    .menu-items-box{
+        margin:auto;
+    }
+    .menu-items-box ul li{
+        font-size:0.7em;
+        width:100%;
+    }
+    .menu-image{
+        display: none;
+    }
+    .far, .fas{
+        font-size: 1.5em;
+    }
+    .info-box h1{
+        font-size:0.8em;
+    }
+    .info-box p{
+        font-size:0.5em;
+    }
+
+    footer p, footer a{
+        font-size: 0.5em;
+    }
+    .left{
+        margin-left:1em;
+        width: 100%;
+    }
+    .right{
+        margin-right: 1em;
+    }
+}
